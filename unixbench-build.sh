@@ -14,4 +14,4 @@ fi
 cd $UNIXBENCH_DIR
 make all
 
-sed -i "s/\('system.*'maxCopies'\) => 16/\1 => 64/" Run
+sed -i "s/\('system.*'maxCopies'\) => 16/\1 => `nproc`/" Run
